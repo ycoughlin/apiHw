@@ -28,10 +28,31 @@
   <div id="gifs-appear-here">
   </div>
 
+        <!-- Button triggers new giphy topic to be added -->
+    <input id="add-topic" type="submit" value="Add a Giphy">
+    </form>
+
+    <!-- giphy button will get dumped here -->
+    <div id="topic-view"></div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
-
+// array of string of topics
     var topics = ["HarmonQuest", ""]
+
+// loop that appends a button for each sting
+
+// button that grabs 10 static, non-animated gif images
+
+// onclick function that  animates a static image
+
+// onclick function that makes an animated image static again
+
+// display gif rating
+
+// search box that adds a vaule to the topics array and creates a button
+
+
     $("button").on("click", function() {
       var person = $(this).attr("data-person");
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
